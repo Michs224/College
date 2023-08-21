@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Buat Toko</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="buattoko.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Rjjsu7IVq6lomGFAehRtje7x0/W4N+YnPV/FDPQZ12a/okTVClyDE3SpgfUKieGqzTvc1Fj4ykuHmOVVmkttkA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="kotak">
+        <div class="kotakkiri">
+            <img src="gambar/akutahutokoanda.png" alt="akutahutokoanda" class="gambarlogin2">
+        </div>
+        <div class="kotakkanan">
+            <div>
+                <span class="textlogin">Ayo, isi detail tentang toko anda!</span>
+                <div class="inputLogin">
+                    <span class="textlogin2">1. Masukkan No. Handphone</span>
+                    <input type="text" placeholder="No. Handphone" class="inputan" id="NoHP" required>
+                    <span class="textlogin2">2. Masukkan Nama Toko dan Domain</span>
+                    <input type="text" placeholder="Nama Toko" class="inputan" id="namatoko" required>
+                    <span class="textlogin2">tokollege.com/</span>
+                    <input type="text" placeholder="Nama Domain" class="domain" id="domain" required><br>
+                    <span class="textlogin2">3. Masukkan Deskripsi Toko</span>
+                    <input type="text" placeholder="Deskripsi Toko" class="inputan" id="deskripsitoko" required>
+                </div>
+                <button class="buttonLoginPg" onclick="checkInputToko()">Lanjut</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

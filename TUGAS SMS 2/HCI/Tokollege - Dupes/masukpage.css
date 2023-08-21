@@ -1,0 +1,109 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(37, 23, 73, 1);
+}
+
+.kotak {
+    height: 50%;
+    width: 90%;
+}
+
+.duakotak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotakkiri,
+.kotakkanan{
+    margin-left: 10px;
+    width: 45%;
+    margin-right: 10px;
+}
+
+@media (max-width: 1100px) {
+    .duakotak {
+      flex-direction: column;
+    }
+    
+    .kotakkiri,
+    .kotakkanan {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+}
+
+.isikotak {
+    border: 3px solid gray;
+    color: white;
+    padding: 20px;
+}
+
+.judulteks{
+    font-family: 'Dongle';
+    font-size: 80px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+
+.judulteks2{
+    color: rgba(255, 255, 255, 1);
+    font-size: 34px;
+    font-style: bold;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.textsubtitle {
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    font-style: bold;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+.kembali a{
+    font-family: 'Dongle';
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    float: right;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.kembali a:hover {
+    color: #ebff00;
+    text-decoration: none;
+}
+
+.tombol {
+    display: flex;
+    justify-content: center;
+    padding: 15px 60px;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ffc671;
+    color: black;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+  
+.tombol:hover {
+    background-color: #ff9900;
+    text-decoration: none;
+}
+
+.fotokiri{
+    width: 304px;
+    height: 200px;
+}

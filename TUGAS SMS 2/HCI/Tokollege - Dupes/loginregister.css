@@ -1,0 +1,125 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.kotak {
+    height: 50%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotakkiri{
+    width: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.kotakkanan {
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 1100px) {
+    .kotak {
+        flex-direction: column;
+    }
+
+    .kotakkiri{
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .kotakkanan {
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .gambarlogin2 {
+        width: 326px;
+        height: 235px;
+    }
+}
+
+.gambarlogin2 {
+    width: 417px;
+    height: 300px;
+}
+
+.textlogin {
+    font-size: 45px;
+    font-family: 'Dongle';
+    color: black;
+}
+
+.inputLogin {
+    margin-bottom: 20px;
+}
+
+.inputLogin input[type="email"],.inputLogin input[type="text"],
+.inputLogin input[type="password"] {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
+.button {
+    font-size: 25px;
+    font-family: 'Dongle';
+    background-color: #251749;
+    transition: background-color 0.3s ease;
+    color: white;
+    font-size: 28px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: rgb(90, 5, 90);
+}
+
+.disini {
+    display: flex;
+    align-items: center;
+}  
+
+.disini a{
+    font-family: 'Dongle';
+    font-size: 27px;
+    font-weight: 400;
+    color: blue;
+    float: left;
+    transition: background-color 0.3s ease;
+    margin-left: 2px;
+    text-decoration: none;
+}
+
+.disini a:hover{
+    text-decoration: underline;
+}
+
+.textlogin2 {
+    font-size: 25px;
+    font-family: 'Dongle';
+    color: black;
+    margin-right: 2px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+    <title>Masuk Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&amp display=swap" data-tag="font" />
+    <link rel="stylesheet" href="./masukpage.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="kotak">
+        <div class="judulteks">
+            Apa yang ingin Anda lakukan?
+        </div>
+        <div class="duakotak">
+            <div class="kotakkiri">  
+                <div class="isikotak" style="border: 4px solid gray">
+                    <h5 class="textsubtitle">Masuk ke halaman penjual</h5><br>
+                    <a href="./loginpage.html" class="tombol" onclick="setTokoStatus('penjualSudahPunya')"><b>Sudah Punya Toko</b></a><br><br>
+                    <a href="./registerpage.html" class="tombol" onclick="setTokoStatus('penjualBelumPunya')"><b>Belum Punya Toko</b></a>
+                    <img src="gambar/onlinestore.png" alt="gambartoko" class="fotokiri">
+                </div>
+            </div>
+            <div class="kotakkanan">
+                <div class="isikotak" style="border: 4px solid gray">
+                    <h5 class="textsubtitle">Masuk ke halaman pembeli</h5><br>
+                    <a href="./loginpage.html" class="tombol" onclick="setTokoStatus('pembeli')"><b>Login</b></a><br><br>
+                    <a href="./registerpage.html" class="tombol" onclick="setTokoStatus('pembeli')"><b>Register</b></a>
+                    <img src="gambar/clothingstore.png" alt="orangbaju">
+                </div>                  
+            </div>
+        </div>
+        <div class="kembali">
+            <a href="./index.html">Kembali</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

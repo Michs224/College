@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+    <title>Beranda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&amp display=swap" data-tag="font" />
+    <link rel="stylesheet" href="./beranda.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a class="navbar-brand" href="index.html" style="display: flex; justify-content: center; align-items: center;">
+                <img src="gambar/logo.png" alt="Logo" style="width: 77px; height:60px;">
+            </a>
+            <div class="menu-icon" onclick="toggleNavbar()">
+                <i class="fas fa-bars" style="color: white;"></i>
+            </div>
+            <ul class="navbar-nav" id="navBar">
+                <li class="nav-item" style="width: 15%;">
+                    <a class="nav-link" href="beranda.html">Beranda</a>
+                </li>
+                <li class="nav-item" style="width: 15%;">
+                    <button class="dropdownkategori" type="button" style="text-decoration: none; background-color: transparent; border: none; font-family: 'Inter';
+                    font-weight: 600; font-size: 20px;" onclick="toggleDropdown('myDropdown')">Kategori</button>
+
+                    <ul class="dropdown-menu"  id="myDropdown">
+                        <li><a href="food&beverage.html">Makanan dan Minuman</a></li>
+                        <li><a href="electronic.html">Elektronik</a></li>
+                        <li><a href="fashion.html">Busana</a></li>
+                        <li><a href="stationery.html">Alat tulis</a></li>
+                        <li><a href="cosmetics.html">Kosmetik</a></li>
+                        <li><a href="others.html">Lainnya</a></li>
+                    </ul>
+                </li>
+                <form class="search-form" style="width: 30%;">
+                    <input class="search-input" type="text" placeholder="Search...">
+                    <div class="searchbtn">
+                        <button>Search</button>
+                    </div>
+                </form>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="far fa-user-circle" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="far fa-heart" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdownMenu = document.getElementById(dropdownId);
+            dropdownMenu.style.display = dropdownMenu.style.display === "none" || dropdownMenu.style.display === "" ? "block" : "none";
+        }
+
+        function toggleNavbar() {
+            var navbar = document.getElementById("navBar");
+            navbar.classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches(".dropdownkategori") && !event.target.matches(".menu-icon")) {
+                var dropdowns = document.getElementsByClassName("dropdown-menu");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        };
+    </script>
+
+    <div class="kotak">
+        <div class="banner">
+            <a href="#"><img src="gambar/banner.png" alt="banner"></a>
+        </div>
+    </div>
+
+    <div class="teksaktivitas">
+        <span class="aktivitas">Rekomendasi</span>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 35px;">
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slider-image">
+                    <a href="detailprodukfood.html"> <img src="gambar/image1.png"  alt="Image 1"></a>
+                    <div class="slider-text">
+                        <div class="potong-text">
+                            Kue Nastar Special
+                        </div>
+                    </div>
+                    <div class="slider-text2">
+                        Rp 24.000
+                    </div>
+                    <div class="slider-text3">
+                        ★ ★ ★ ★ ★
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <img src="gambar/image2.png" alt="Image 2">
+                    <div class="slider-text">
+                        <div class="potong-text">
+                            Atasan Abu-abu Hitam
+                        </div>
+                    </div>
+                    <div class="slider-text2">
+                        Rp 120.000
+                    </div>
+                    <div class="slider-text3">
+                        ★ ★ ★ ★ ★
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <img src="gambar/image3.png" alt="Image 3">
+                    <div class="slider-text">
+                        <div class="potong-text">
+                            Midliner brushpen
+                        </div>
+                    </div>
+                    <div class="slider-text2">
+                        Rp 24.000
+                    </div>
+                    <div class="slider-text3">
+                        ★ ★ ★ ★
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <img src="gambar/image4.png" alt="Image 4">
+                    <div class="slider-text">
+                        <div class="potong-text">
+                            Smoothie Stroberi
+                        </div>
+                    </div>
+                    <div class="slider-text2">
+                        Rp 27.000
+                    </div>
+                    <div class="slider-text3">
+                        ★ ★ ★ ★ ★
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <img src="gambar/image5.png" alt="Image 5">
+                    <div class="slider-text">
+                        <div class="potong-text">
+                            Lampu Belajar
+                        </div>
+                    </div>
+                    <div class="slider-text2">
+                        Rp 350.000
+                    </div>
+                    <div class="slider-text3">
+                        ★ ★ ★ ★ ★
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <img src="gambar/image6.png" alt="Image 6">
+                    <div class="slider-text">
+                        <div class="potong-text">
+                            Maybelline Liquid Foundation
+                        </div>
+                    </div>
+                    <div class="slider-text2">
+                        Rp 110.000
+                    </div>
+                    <div class="slider-text3">
+                        ★ ★ ★ ★
+                    </div>
+                </div>
+            </div>
+            <button class="prev-btn" onclick="prevImages()"><img src="gambar/prev.png" alt="prev"></button>
+            <button class="next-btn" onclick="nextImages()"><img src="gambar/next.png" alt="next"></button>
+        </div> 
+    </div>
+         
+    <div class="teksaktivitas">
+        <span class="aktivitas">Kategori Pilihan</span>
+    </div>
+
+    <div class="kotak">
+        <div class="kotakdalam">
+            <a href="#"><img src="gambar/kategoripilihan1.png" alt="pilihan1"></a>
+        </div>
+        <div class="kotakdalam">
+            <a href="#"><img src="gambar/kategoripilihan2.png" alt="pilihan2"></a>
+        </div>
+        <div class="kotakdalam">
+            <a href="#"><img src="gambar/kategoripilihan3.png" alt="pilihan3"></a>
+        </div>
+        <div class="kotakdalam">
+            <a href="#"><img src="gambar/kategoripilihan4.png" alt="pilihan4"></a>
+        </div>
+    </div>
+
+    <footer style="margin-top: 30px; min-height: 67vh;">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <a class="navbar-brand" href="index.html"><img src="./gambar/logo.png"></a>
+                    <div class="social-links mt-3">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT US</h4>
+                    <span class="question">Jika Anda mempunyai pertanyaan, bisa hubungi<br><a href="mailto:tokollege@gmail.com" style="color:orange;"> tokollege@gmail.com</a></span>
+                    <img src="./gambar/lokasihp.png" class="lokasihp">
+                </div>
+                <div class="footer-col">
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li><a href="#">Tentang</a></li>
+                        <li><a href="#">Informasi Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>STORE</h4>
+                    <ul>
+                        <li><a href="#">Afiliasi</a></li>
+                        <li><a href="#">Diskon</a></li>
+                        <li><a href="#">Penjualan</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Semua Koleksi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr size="1" color="gray" width="100%" text-align="left">
+
+            <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                <span>
+                    <img src="./gambar/card.png"><br>
+                    <img src="./gambar/copyright.png">
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        var slideIndex = 0;
+        var images = document.getElementsByClassName("slider-image");
+
+        function showImages() {
+            for (var i = 0; i < images.length; i++) {
+                if (i >= slideIndex && i < slideIndex + 3) {
+                    images[i].style.display = "flex";
+                } else {
+                    images[i].style.display = "none";
+                }
+            }
+        }
+
+        function prevImages() {
+            slideIndex -= 3;
+            if (slideIndex < 0) {
+                slideIndex = Math.max(0, images.length - 3);
+            }
+            showImages();
+        }
+
+        function nextImages() {
+            slideIndex += 3;
+            if (slideIndex >= images.length) {
+                slideIndex = 0;
+            }
+            showImages();
+        }
+
+        showImages();
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+    <title>Register Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="loginregister.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="kotak">
+        <div class="kotakkiri">
+            <img src="gambar/login2.png" alt="gambarlogin" class="gambarlogin2">
+        </div>
+        <div class="kotakkanan">
+            <div>
+                <span class="textlogin">Register</span>
+                <div class="inputLogin">
+                    <input type="text"  id="username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <div class="disini">
+                    <span class="textlogin2">Sudah punya akun?</span>
+                    <a href="loginpage.html">Klik disini.</a>
+                </div>
+                <button class="button" onclick="saveCredentials()">
+                    Register Now!
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Beranda Toko</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&amp display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./berandatoko.css"/>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a class="navbar-brand" href="index.html" style="display: flex; justify-content: center; align-items: center;">
+                <img src="gambar/logo.png" alt="Logo" style="width: 77px; height:60px;">
+            </a>
+            <div class="menu-icon" onclick="toggleNavbar()">
+                <i class="fas fa-bars" style="color: white;"></i>
+            </div>
+            <ul class="navbar-nav" id="navBar">
+                <li class="nav-item" style="width: 15%;">
+                    <a class="nav-link" href="beranda.html">Beranda</a>
+                </li>
+                <li class="nav-item" style="width: 15%;">
+                    <button class="dropdownkategori" type="button" style="text-decoration: none; background-color: transparent; border: none; font-family: 'Inter';
+                    font-weight: 600; font-size: 20px;" onclick="toggleDropdown('myDropdown')">Kategori</button>
+
+                    <ul class="dropdown-menu"  id="myDropdown">
+                        <li><a href="food&beverage.html">Makanan dan Minuman</a></li>
+                        <li><a href="electronic.html">Elektronik</a></li>
+                        <li><a href="fashion.html">Busana</a></li>
+                        <li><a href="stationery.html">Alat tulis</a></li>
+                        <li><a href="cosmetics.html">Kosmetik</a></li>
+                        <li><a href="others.html">Lainnya</a></li>
+                    </ul>
+                </li>
+                <form class="search-form" style="width: 30%;">
+                    <input class="search-input" type="text" placeholder="Search...">
+                    <div class="searchbtn">
+                        <button>Search</button>
+                    </div>
+                </form>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="far fa-user-circle" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="far fa-heart" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdownMenu = document.getElementById(dropdownId);
+            dropdownMenu.style.display = dropdownMenu.style.display === "none" || dropdownMenu.style.display === "" ? "block" : "none";
+        }
+
+        function toggleNavbar() {
+            var navbar = document.getElementById("navBar");
+            navbar.classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches(".dropdownkategori") && !event.target.matches(".menu-icon")) {
+                var dropdowns = document.getElementsByClassName("dropdown-menu");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        };
+    </script>
+
+    <div class="kotak">
+        <div class="kotaktengah">
+            <div class="gambar">
+                <img src="gambar/logotoko.png" alt="logotoko">
+            </div>
+            <div class="nama">
+                <span class="textnama">
+                    Toko Titi
+                </span>
+            </div>
+            <div class="rating">
+                <span class="bintang">
+                    ★ ★ ★ ★ ★
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="kotak">
+        <div class="kotaktengah2">
+            <div class="kotak1">
+                <button class="tombol">
+                    Home
+                </button>
+            </div>
+            <div class="kotak2">
+                <button class="tombol2">
+                    Diskusi
+                </button>
+            </div>
+            <div class="kotak3">
+                <button class="tombol">
+                    Produk
+                </button>
+            </div>
+            <div class="kotak4">
+                <button class="tombol2">
+                    Detail Penjualan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="kotak">
+        <div class="kotaktengah2">
+            <div class="kotakkirigambar">
+                <a href="#"><img src="gambar/tambahproduktoko.png" alt="tambahproduk"></a>
+            </div>
+            <div class="kotakkanangambar">
+                <a href="#"><img src="gambar/editdetailproduk.png" alt="tambahproduk"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="teksaktivitas">
+        <span class="aktivitas">Aktivitas Tokomu</span>
+    </div>
+    
+
+    <div class="kotakluar">
+        <div class="kotak5">
+            <div class="kotakaktivitas">
+                <div class="kotaktengah3">
+                    <div class="jumlah">
+                        30
+                    </div>
+                    <div class="jenis">
+                        Pesanan Baru
+                    </div>
+                </div>
+                <div class="kotaktengah3">
+                    <div class="jumlah">
+                        20
+                    </div>
+                    <div class="jenis">
+                        Pesanan Dikemas
+                    </div>
+                </div>
+                <div class="kotaktengah3">
+                    <div class="jumlah">
+                        0
+                    </div>
+                    <div class="jenis">
+                        Komplain Pesanan
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="kotak6">
+            <div class="kotakaktivitas">
+                <div class="kotaktengah3">
+                    <div class="jumlah">
+                        15
+                    </div>
+                    <div class="jenis">
+                        Chat Baru
+                    </div>
+                </div>
+                <div class="kotaktengah3">
+                    <div class="jumlah">
+                        10
+                    </div>
+                    <div class="jenis">
+                        Ulasan Baru
+                    </div>
+                </div>
+                <div class="kotaktengah3">
+                    <div class="jumlah">
+                        15
+                    </div>
+                    <div class="jenis">
+                        Produk Terlaris
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="teksaktivitas">
+        <span class="aktivitas">Statistik Tokomu Bulan Ini</span>
+    </div>
+
+    <div class="kotakakhir">
+        <div class="kotaktengah4">
+            <div class="statistik">
+                Pendapatan Toko Bulan Ini<br><br>
+                Rp 1.000.000
+            </div>
+        </div>
+        <div class="kotaktengah4">
+            <div class="statistik">
+                Produk Dilihat<br><br>
+                100
+            </div>
+        </div>
+        <div class="kotaktengah4">
+            <div class="statistik">
+                Produk Terjual<br><br>
+                50
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 30px;  min-height: 67vh;">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <a class="navbar-brand" href="index.html"><img src="gambar/logo.png"></a>
+                    <div class="social-links mt-3">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT US</h4>
+                    <span class="question">Jika Anda mempunyai pertanyaan, bisa hubungi<br><a href="mailto:tokollege@gmail.com" style="color:orange;"> tokollege@gmail.com</a></span>
+                    <img src="gambar/lokasihp.png" class="lokasihp">
+                </div>
+                <div class="footer-col">
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li><a href="#">Tentang</a></li>
+                        <li><a href="#">Informasi Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>STORE</h4>
+                    <ul>
+                        <li><a href="#">Afiliasi</a></li>
+                        <li><a href="#">Diskon</a></li>
+                        <li><a href="#">Penjualan</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Semua Koleksi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr size="1" color="gray" width="100%" text-align="left">
+
+            <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                <span>
+                    <img src="gambar/card.png"><br>
+                    <img src="gambar/copyright.png">
+                </span>
+            </div>
+        </div>
+   </footer>
+
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("myDropdown");
+            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdownkategori')) {
+                var dropdowns = document.getElementsByClassName("dropdown-menu");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        }
+        function toggleNav() {
+            var navbarNav = document.querySelector('.navbar-nav');
+            navbarNav.classList.toggle('active');
+        }
+
+        document.querySelector('.menu-icon').addEventListener('click', toggleNav);
+
+        // function toggleNavbar() {
+        //     var dropdownContent = document.getElementById("navBar");
+        //     if (dropdownContent.style.display === "block") {
+        //         dropdownContent.style.display = "none";
+        //     } else {
+        //         dropdownContent.style.display = "block";
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

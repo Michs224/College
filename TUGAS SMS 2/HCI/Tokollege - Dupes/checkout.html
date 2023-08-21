@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&amp display=swap" data-tag="font" />
+    <link rel="stylesheet" href="./checkout.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a class="navbar-brand" href="index.html" style="display: flex; justify-content: center; align-items: center;">
+                <img src="gambar/logo.png" alt="Logo" style="width: 77px; height:60px;">
+            </a>
+            <div class="menu-icon" onclick="toggleNavbar()">
+                <i class="fas fa-bars" style="color: white;"></i>
+            </div>
+            <ul class="navbar-nav" id="navBar">
+                <li class="nav-item" style="width: 15%;">
+                    <a class="nav-link" href="beranda.html">Beranda</a>
+                </li>
+                <li class="nav-item" style="width: 15%;">
+                    <button class="dropdownkategori" type="button" style="text-decoration: none; background-color: transparent; border: none; font-family: 'Inter';
+                    font-weight: 600; font-size: 20px;" onclick="toggleDropdown('myDropdown')">Kategori</button>
+
+                    <ul class="dropdown-menu"  id="myDropdown">
+                        <li><a href="food&beverage.html">Makanan dan Minuman</a></li>
+                        <li><a href="electronic.html">Elektronik</a></li>
+                        <li><a href="fashion.html">Busana</a></li>
+                        <li><a href="stationery.html">Alat tulis</a></li>
+                        <li><a href="cosmetics.html">Kosmetik</a></li>
+                        <li><a href="others.html">Lainnya</a></li>
+                    </ul>
+                </li>
+                <form class="search-form" style="width: 30%;">
+                    <input class="search-input" type="text" placeholder="Search...">
+                    <div class="searchbtn">
+                        <button>Search</button>
+                    </div>
+                </form>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="far fa-user-circle" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="far fa-heart" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdownMenu = document.getElementById(dropdownId);
+            dropdownMenu.style.display = dropdownMenu.style.display === "none" || dropdownMenu.style.display === "" ? "block" : "none";
+        }
+
+        function toggleNavbar() {
+            var navbar = document.getElementById("navBar");
+            navbar.classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches(".dropdownkategori") && !event.target.matches(".menu-icon")) {
+                var dropdowns = document.getElementsByClassName("dropdown-menu");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        };
+    </script>
+
+    <div class="teksaktivitas">
+        <div style="width: 90%; margin-top: 15px; padding: 30px; padding-top: 0; padding-bottom: 0;">
+            <span class="aktivitas">Lokasi Anda</span>
+        </div>
+    </div>
+
+    <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+        <div class="kotak">
+            <div class="kotakdalam">
+                <div>
+                    <b>Budi</b>
+                    (Kampus)
+                </div>
+                <div style="margin-top: 10px;">
+                    +62 8123456789
+                </div>
+                <div style="margin-top: 10px;">
+                    Kampus BINUS Semarang
+                </div>
+                <div style="margin-top: 10px; color: grey;">
+                    Jalan Ambarawa Anjas B8 no.193, KOTA SEMARANG, SEMARANG TENGAH, JAWA TENGAH, ID, 50235<br>
+                    Semarang Tengah, Kota Semarang, 50235 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-top: 20px; width: 100%; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 90%;">
+            <a href="#"><img src="gambar/ChatPenjual.png" alt="chat"></a>
+        </div>
+    </div>
+
+    <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+        <div class="kotak2">
+            <div class="kotakkiri">
+                <div style="padding-left: 15%; padding-top: 15px; padding-bottom: 10px;">
+                    <b>Order Anda</b><br>
+                    Kota Semarang
+                </div>
+                <div style="padding: 5%; padding-top: 10px;">
+                    <div style="display: flex; border-bottom: 1px solid grey;">
+                        <div class="gambar">
+                            <img src="gambar/Maple.png" alt="maple">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                ACT MODE Maple: Machine God Ver. 
+                            </div>
+                            <div class="tombol">
+                                <button class="kurang" id="kurang" onclick="ubahKuantitas1(false)">-</button>
+                                <span id="jumlah1">1</span>
+                                <button class="tambah" id="tambah" onclick="ubahKuantitas1(true)">+</button>
+                                Rp 
+                                <span id="harga1">1.696.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; border-bottom: 1px solid grey;">
+                        <div class="gambar">
+                            <img src="gambar/nastar2.png" alt="nastar">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                Kue nastar spesial hari raya idul fitri
+                            </div>
+                            <div class="tombol">
+                                <button class="kurang" id="kurang" onclick="ubahKuantitas2(false)">-</button>
+                                <span id="jumlah2">1</span>
+                                <button class="tambah" id="tambah" onclick="ubahKuantitas2(true)">+</button>
+                                Rp 
+                                <span id="harga2">24.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; border-bottom: 1px solid grey;">
+                        <div class="gambar">
+                            <img src="gambar/Maple.png" alt="maple">
+                        </div>
+                        <div class="detail">
+                            <div class="text">
+                                ACT MODE Maple: Machine God Ver. 
+                            </div>
+                            <div class="tombol">
+                                <button class="kurang" id="kurang" onclick="ubahKuantitas3(false)">-</button>
+                                <span id="jumlah3">1</span>
+                                <button class="tambah" id="tambah" onclick="ubahKuantitas3(true)">+</button>
+                                Rp 
+                                <span id="harga3">25.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kotakkanan">
+                <b>Total</b><br><br>
+                <div style="display: flex; justify-content: space-between;">
+                    <span style="text-align: left;">Subtotal</span>
+                    <span style="text-align: right;" id="subtotal">Rp. 1.745.000</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <span style="text-align: left;">Diskon</span>
+                    <span style="text-align: right;" >Rp 0</span>
+                </div>
+                <hr size="1" color="gray" width="100%" text-align="left">
+                <div style="display: flex; justify-content: space-between;">
+                    <span style="text-align: left;"><b>Total Harga</b></span>
+                    <span style="text-align: right;" id="total">Rp. 1.745.000</span>
+                </div>
+                <br>
+                Catatan untuk Penjual
+                <input type="text" placeholder="Ketik disini..." style="width: 100%; height: 30px; background: transparent; border: 1px solid gray;">
+                <div style="display: flex; margin-top: 10px;">
+                    <input type="checkbox">
+                    <label for="">Harap periksa untuk menyetujui Kebijakan <a href="#">Privasi & Ketentuan Kami</a></label>
+                </div>
+                <button style="margin-top: 10px; text-align: center; width: 100%; background-color: #251749; color: white;font-style: Bold; font-weight: 700; height: 30px; border-radius: 5px;">Bayar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var jumlah1 = 1;
+        var jumlah2 = 1;
+        var jumlah3 = 1;
+
+        function ubahKuantitas1(tambah) {
+            var harga = 1696000;
+
+            if (tambah) {
+                jumlah1++;
+            } else {
+                if (jumlah1 > 1) {
+                    jumlah1--;
+                }
+            }
+            document.getElementById("jumlah1").innerText = jumlah1;
+            document.getElementById("harga1").innerText = formatCurrency(harga * jumlah1);
+            updateSubtotal();
+            updateTotal();
+        }
+
+        function ubahKuantitas2(tambah) {
+            var harga = 24000;
+
+            if (tambah) {
+                jumlah2++;
+            } else {
+                if (jumlah2 > 1) {
+                    jumlah2--;
+                }
+            }
+            document.getElementById("jumlah2").innerText = jumlah2;
+            document.getElementById("harga2").innerText = formatCurrency(harga * jumlah2);
+            updateSubtotal();
+            updateTotal();
+        }
+
+        function ubahKuantitas3(tambah) {
+            var harga = 25000;
+            if (tambah) {
+                jumlah3++;
+            } else {
+                if (jumlah3 > 1) {
+                    jumlah3--;
+                }
+            }
+            document.getElementById("jumlah3").innerText = jumlah3;
+            document.getElementById("harga3").innerText = formatCurrency(harga * jumlah3);
+            updateSubtotal();
+            updateTotal();
+        }
+
+        function updateSubtotal() {
+            var harga1 = 1696000;
+            var harga2 = 24000;
+            var harga3 = 25000;
+
+            var subtotal = harga1 * jumlah1 + harga2 * jumlah2 + harga3 * jumlah3;
+            document.getElementById("subtotal").innerText = "Rp. " + formatCurrency(subtotal);
+        }
+
+        function updateTotal() {
+            var harga1 = 1696000;
+            var harga2 = 24000;
+            var harga3 = 25000;
+
+            var subtotal = harga1 * jumlah1 + harga2 * jumlah2 + harga3 * jumlah3;
+            document.getElementById("total").innerText = "Rp. " + formatCurrency(subtotal);
+        }
+
+        function formatCurrency(amount) {
+            return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+    </script>
+
+    <div class="kotak3">
+        <div class="kotaktengah" style="padding: 20px;">
+            <div>
+                <b>Metode Pembayaran</b>
+            </div>
+            <div>
+                <label for="cash">
+                    <div style="border: 1px solid black; margin-top:10px; padding: 20px; display: flex;">
+                        <div style="width: 15%;">
+                            <input type="radio" name="metodepembayaran" value="cash" id="cash">
+                            <label for="cash"><b>Cash</b></label><br><br>
+                        </div>
+                        <div style="width: 85%;">
+                            Gunakan Cash
+                        </div>
+                    </div>
+                </label>
+                <label for="gopay">
+                    <div style="border: 1px solid black; margin-top:10px; padding: 20px; display: flex;">
+                        <div style="width: 15%;">
+                            <input type="radio" name="metodepembayaran" value="gopay" id="gopay">
+                            <label for="gopay"><b>GoPay</b></label><br><br>
+                            <div id="input-box2" style="display: none;">
+                                <input type="text" id="nomor-kartu" name="nomor-kartu" placeholder="Nomor Telepon" style="width: 200px; height: 30px;">
+                            </div>
+                        </div>
+                        <div style="width: 25%;">
+                            Gunakan Gopay
+                        </div>
+                        <div style="width: 60%;">
+                            <img src="gambar/gopay.png" style="width: 8%;">
+                        </div>
+                    </div>
+                </label>
+                <label for="kartu">
+                    <div style="border: 1px solid black; margin-top:10px; padding: 20px; display: flex;">
+                        <div style="width: 15%;">
+                            <input type="radio" name="metodepembayaran" value="kartu" id="kartu">
+                            <label for="kartu"><b>Kartu Kredit / Debit</b></label><br><br>
+                            <div id="input-box3" style="display: none;">
+                                    <input type="text" id="nomor-kartu" name="nomor-kartu" placeholder="Nomor Kartu" style="width: 200px; height: 30px;">
+                                    <input type="password" id="nomor-kartu" name="nomor-kartu" placeholder="CVV" style="margin-top: 10px; width: 200px; height: 30px;">
+                                    <input type="text" id="nomor-kartu" name="nomor-kartu" placeholder="Masa Berlaku" style="margin-top: 10px;  width: 200px; height: 30px;">
+                            </div>
+                        </div>
+                        <div style="width: 25%;">
+                            Gunakan Kartu Kredit / Debit
+                        </div>
+                        <div style="width: 60%;">
+                            <img src="gambar/visa.png" style="width: 40%;">
+                        </div>
+                    </div>
+                </label>
+            </div>            
+        </div>
+    </div>
+
+    <footer style="margin-top: 30px; min-height: 55vh;">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <a class="navbar-brand" href="index.html"><img src="gambar/logo.png"></a>
+                    <div class="social-links mt-3">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT US</h4>
+                    <span class="question">Jika Anda mempunyai pertanyaan, bisa hubungi<br><a href="mailto:tokollege@gmail.com" style="color:orange;"> tokollege@gmail.com</a></span>
+                    <img src="gambar/lokasihp.png" class="lokasihp">
+                </div>
+                <div class="footer-col">
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li><a href="#">Tentang</a></li>
+                        <li><a href="#">Informasi Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>STORE</h4>
+                    <ul>
+                        <li><a href="#">Afiliasi</a></li>
+                        <li><a href="#">Diskon</a></li>
+                        <li><a href="#">Penjualan</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Semua Koleksi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr size="1" color="gray" width="100%" text-align="left">
+
+            <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                <span>
+                    <img src="gambar/card.png"><br>
+                    <img src="gambar/copyright.png">
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const inputBox2 = document.getElementById('input-box2');
+        const inputBox3 = document.getElementById('input-box3');
+        const cashRadio = document.getElementById('cash');
+        const gopayRadio = document.getElementById('gopay');
+        const kartuRadio = document.getElementById('kartu');
+
+        cashRadio.addEventListener('click', function() {
+            inputBox2.style.display = 'none';
+            inputBox3.style.display = 'none';
+        });
+
+        gopayRadio.addEventListener('click', function() {
+            inputBox2.style.display = 'block';
+            inputBox3.style.display = 'none';
+        });
+
+        kartuRadio.addEventListener('click', function() {
+            inputBox2.style.display = 'none';
+            inputBox3.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

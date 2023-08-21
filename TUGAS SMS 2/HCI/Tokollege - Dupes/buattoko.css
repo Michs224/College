@@ -1,0 +1,145 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.kotak {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotakkiri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.kotakkanan {
+    width: 50%;
+    margin-right: 20px;
+    border-left: 1px solid black;
+    padding-left: 37px;
+}
+
+.gambarlogin2 {
+    width: 500px;
+    height: 500px;
+}
+
+.textlogin {
+    font-size: 45px;
+    font-family: 'Dongle';
+    color: #251749;
+    font-style: Bold;
+}
+
+.textlogin2 {
+    font-size: 35px;
+    font-family: 'Dongle';
+    color: #251749;
+    font-style: Bold;
+}
+
+.inputLogin input[type="text"]{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inputLogin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.searchbtn button{
+    background-color: antiquewhite;
+   }
+
+.inputan {
+    width: 100%;
+    padding: 12px 0px;
+    margin: 8px 0;
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
+.domain {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 1100px) {
+    .kotak {
+        flex-direction: column;
+    }
+
+    .kotakkiri{
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .kotakkanan {
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid black;
+        padding-top: 50px;
+    }
+
+    .gambarlogin2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .textlogin {
+        font-size: 25px;
+        font-family: 'Dongle';
+        color: #251749;
+        font-style: Bold;
+    }
+    
+    .textlogin2 {
+        font-size: 20px;
+        font-family: 'Dongle';
+        color: #251749;
+        font-style: Bold;
+    }
+}
+
+.buttonLoginPg {
+    font-family: 'Dongle', sans-serif;
+    background-color: rgba(37, 23, 73, 1);
+    color: white;
+    font-size: 26px;
+    width: 100%;
+    font-weight: bold;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.buttonLoginPg:hover {
+    background-color: rgb(90, 5, 90);
+}

@@ -1,0 +1,55 @@
+package JavaIH1_T094;
+
+import java.util.Scanner;
+
+public class JavaIH1_T094 {
+ static Scanner scan=new Scanner(System.in);
+	public JavaIH1_T094() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	static void play() {
+		int check=0;
+		String name="";
+		Character namee;
+		do {
+			System.out.print("Input your name [Alphanumeric And 3 - 10 characters]: ");
+			name= scan.nextLine();
+			int n=name.length();
+			if(!name.matches("^(?=.[A-Za-z])(?=.\\d).+$"))check++;
+			if(n<3 || n>10)check++;
+		}while(check!=2);
+		
+		String mode="";
+		do {
+			
+			System.out.print("Choose your mode [Easy|Medium|Hard] : ");
+			
+		}while(!mode.equals("Easy") && !mode.equals("Medium") && !mode.equals("Hard"));
+		
+		System.out.println("You choose"+mode+" Mode !");
+		System.out.print("Press enter to continue..");
+		scan.nextLine();
+	}
+	
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		int choose;
+		String name;
+
+		do {
+			System.out.print("1. Play\n2. Exit\n>> ");
+			choose=scan.nextInt();
+			scan.nextLine();
+			switch(choose) {
+			case 1:{
+				play();
+			}
+			
+			}
+		}while(choose!=2);
+		
+	}
+
+}

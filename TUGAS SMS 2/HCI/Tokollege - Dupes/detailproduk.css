@@ -1,0 +1,604 @@
+body {
+    margin-top: 112px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+header {
+  z-index: 100;
+  background-color: rgba(37, 23, 73, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar-brand {
+  margin-right: 1rem;
+  width: 15%;
+}
+
+.searchbtn button{
+  background-color: antiquewhite;
+ }
+
+.navbar-nav {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+
+.dropdownkategori{
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.dropdownkategori:hover {
+  color: #ccc;
+}
+
+.dropdown-menu {
+  background-color: #827397;
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.dropdown:hover .dropdown-menu {
+  color: #ccc;
+}
+
+.dropdown-menu li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+
+.dropdown-menu li a{
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #57466F;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.search-input {
+  padding-left: 10px;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #FFFBEB;
+  width: 70%;
+  margin-right: 0.5rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.searchbtn{
+  width: 20%;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navbar-nav {
+      display: none;
+  }
+  
+  .navbar-brand {
+      width: 20%;
+  }
+
+  .menu-icon {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      margin-right: 20px;
+      width: 70%;
+      cursor: pointer;
+  }
+
+  .dropdown-menu {
+    position: static;
+    left: auto;
+    margin-top: 0;
+    width: 100%;
+    background-color: #827397;
+  }
+
+  .dropdown-menu li {
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+  .dropdown-menu li a {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+}
+
+.lokasihp{
+    width: 163px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+
+footer body{
+  line-height: 1.5;
+}
+
+footer .container{
+  max-width: 1170px;
+  margin: auto;
+}
+
+footer .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer ul{
+  list-style: none;
+  padding: 0;
+}
+
+footer{
+  background-color: rgba(37, 23, 73, 1);
+  padding: 70px 10px;
+}
+
+footer .footer-col{
+  width: 25%;
+}
+
+footer .footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: 500;
+  position: relative;
+}
+
+footer .footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+footer .footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+footer .footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer .footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.question{
+  color: white;
+}
+
+.lokasihp{
+  width: 163px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-col {
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+}
+
+@media (max-width: 900px) {
+  .footer-col {
+  width: 45%;
+  margin-bottom: 30px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-col {
+  width: 90%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  }
+}
+
+.kotak {
+  background-color: #D7D7D7;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.kotakkategori1, .kotakkategori2{
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter';
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.kotakkategori1{
+  font-size: 36px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.kotakkategori2{
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+.kotakproduk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.kotakkiri{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin-left: 20px;
+}
+
+.kotakmilih{
+  width: 30%;
+  margin-right: 10px;
+}
+
+.kotakmilih img{
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.kotakfoto{
+  background-color: #F1F1F1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.kotakfoto img{
+  padding: 50px;
+  width: 60%;
+}
+
+.kotakkanan {
+  width: 40%;
+  margin-right: 20px;
+  padding-left: 37px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 100%;
+}
+
+.judulproduk{
+  display: flex;
+  width: 100%;
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+
+.bintang{
+  color: #FFC671;
+}
+
+.deskripsi{
+  font-size: 100%;
+  font-weight: 300;
+}
+
+.deskripsi ul{
+  list-style: circle;
+}
+
+.quantity{
+  border: 4px solid #F1F1F1;
+  border-left: none;
+  border-right: none;
+}
+
+.kotakquantity{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.jumlah{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid orange;
+  border-radius: 2px;
+  padding: 15px;
+  text-align: center;
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.harga{
+  margin-top: 10px;
+  width: 100%;
+}
+
+.tombolquantity{
+  margin-top: 10px;
+}
+
+.tombolquantity span{
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 10%;
+}
+
+.tambah, .kurang{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #F1F1F1;
+  background-color: transparent;
+  font-size: 100%;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 10%;
+}
+
+.beli{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 80%;
+  width: 30%;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #E73C17;
+  margin-left: 15px;
+  color: white;
+  border: 0;
+}
+
+.keranjang{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 80%;
+  width: 30%;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+  margin-left: 15px;
+  color: black;
+  border: 1px solid #E73C17;
+}
+
+@media (max-width: 1000px){
+  .kotakproduk{
+    display: block;
+  }
+
+  .kotakkiri, .kotakkanan{
+    width: 80%;
+    font-size: 60%;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+
+.slider {
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  overflow: hidden;
+}
+
+.slider-image {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.slider-image button{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-image button.active{
+  border-bottom: 3px solid orange;
+}
+
+.slider-text {
+  margin-top: 30px;
+  border-top: 3px solid #F0F0F0;
+  display: grid;
+  width: 90%;
+  color: black;
+  padding: 10px;
+  font-size: 100%;
+  text-align: left;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+.slider-text #comment{
+  margin-top: 15px;
+  padding: 10px;
+  margin-left: 50px;
+  width:50%;
+  border-radius: 15px;
+  
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.slider-text img{
+  width: 70%;
+}
+
+.kotak2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.kotakdalam{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 15px;
+}
+
+.kotakdalam img{
+  width: 100%;
+}
+
+.teksaktivitas{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.aktivitas{
+  font-family: 'Inter';
+  font-size: 25px;
+  font-weight: 600;
+}

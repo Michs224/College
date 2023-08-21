@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+    <title>Detail Produk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&amp display=swap" data-tag="font" />
+    <link rel="stylesheet" href="./detailproduk.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a class="navbar-brand" href="index.html" style="display: flex; justify-content: center; align-items: center;">
+                <img src="gambar/logo.png" alt="Logo" style="width: 77px; height:60px;">
+            </a>
+            <div class="menu-icon" onclick="toggleNavbar()">
+                <i class="fas fa-bars" style="color: white;"></i>
+            </div>
+            <ul class="navbar-nav" id="navBar">
+                <li class="nav-item" style="width: 15%;">
+                    <a class="nav-link" href="beranda.html">Beranda</a>
+                </li>
+                <li class="nav-item" style="width: 15%;">
+                    <button class="dropdownkategori" type="button" style="text-decoration: none; background-color: transparent; border: none; font-family: 'Inter';
+                    font-weight: 600; font-size: 20px;" onclick="toggleDropdown('myDropdown')">Kategori</button>
+
+                    <ul class="dropdown-menu"  id="myDropdown">
+                        <li><a href="food&beverage.html">Makanan dan Minuman</a></li>
+                        <li><a href="electronic.html">Elektronik</a></li>
+                        <li><a href="fashion.html">Busana</a></li>
+                        <li><a href="stationery.html">Alat tulis</a></li>
+                        <li><a href="cosmetics.html">Kosmetik</a></li>
+                        <li><a href="others.html">Lainnya</a></li>
+                    </ul>
+                </li>
+                <form class="search-form" style="width: 30%;">
+                    <input class="search-input" type="text" placeholder="Search...">
+                    <div class="searchbtn">
+                        <button>Search</button>
+                    </div>
+                </form>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="far fa-user-circle" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="far fa-heart" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+                <li class="nav-item" style="width: 15%; display: flex; justify-content: center; align-items: center;">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart" style="font-size: 30px; color: #E4E4E4;"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdownMenu = document.getElementById(dropdownId);
+            dropdownMenu.style.display = dropdownMenu.style.display === "none" || dropdownMenu.style.display === "" ? "block" : "none";
+        }
+
+        function toggleNavbar() {
+            var navbar = document.getElementById("navBar");
+            navbar.classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches(".dropdownkategori") && !event.target.matches(".menu-icon")) {
+                var dropdowns = document.getElementsByClassName("dropdown-menu");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        };
+    </script>
+
+    <div class="kotak">
+        <div class="kotakkategori1">
+            MAKANAN DAN MINUMAN
+        </div>
+        <div class="kotakkategori2">
+            BERANDA / MAKANAN DAN MINUMAN
+        </div>
+    </div>
+
+    <div class="kotakproduk">
+        <div class="kotakkiri">
+            <div class="kotakmilih">
+                <img src="gambar/image 18.png" alt="tws">
+                <img src="gambar/image 17.png" alt="tws">
+                <img src="gambar/image_2.png" alt="tws">
+            </div>
+            <div class="kotakfoto">
+                <img src="gambar/image 16.png" alt="tws">
+            </div>
+        </div>
+        <div class="kotakkanan">
+            <div class="judulproduk">
+                JBL TUNE 225TWS | TRUE WIRELESS EARBUDS
+            </div>
+            <div class="rating">
+                <div class="bintang">
+                    ★ ★ ★ ★ ★
+                </div>
+            </div>
+            <div class="deskripsi">
+                <ul>
+                    <li>
+                        Koneksi: Bluetooth 5.0 untuk koneksi wireless dan memiliki jangkauan koneksi hingga 10 meter.
+                    </li>
+                    <li>
+                        Kualitas Suara: Earphone ini dilengkapi dengan driver 12mm , serta fitur JBL Pure Bass yang ikonik.
+                    </li>
+                    <li>
+                        Fitur: Earphone ini memiliki fitur tap control yang memungkinkan Anda mengontrol pemutaran musik dan menerima panggilan hanya dengan sentuhan tombol di earphone.
+                    </li>
+                    <li>
+                        Baterai: Earphone ini memiliki daya tahan baterai hingga 25 jam dengan charging case, serta dilengkapi dengan fitur fast charging yang dapat mengisi baterai dalam waktu singkat.
+                    </li>
+                </ul>
+            </div>
+            <div class="quantity">
+                <div class="kotakquantity">
+                    <div class="jumlah">
+                        Black
+                    </div>
+                    <div class="jumlah">
+                        Blue
+                    </div>
+                    <div class="jumlah">
+                        Grey
+                    </div>
+                </div>
+                <div class="kotakquantity">
+                    <div class="jumlah">
+                        White
+                    </div>
+                    <div class="jumlah">
+                        Rose Gold
+                    </div>
+                    <!-- <div class="jumlah">
+                        2.5 Kg
+                    </div> -->
+                </div>
+            </div>
+            <div class="harga">
+                Rp 
+                <span id="harga">1100000</span>
+            </div>
+            <div class="tombolquantity">
+                <button class="kurang" id="kurang" onclick="ubahKuantitas(false)">-</button>
+                <span id="jumlah">1</span>
+                <button class="tambah" id="tambah" onclick="ubahKuantitas(true)">+</button>
+                <button class="beli" id="tambah" onclick="gotoCheckout(true)">Beli</button>
+                <button class="keranjang" id="tambah" onclick="gotoCheckout(true)">+ Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function gotoCheckout(){
+            window.location.href = "checkout.html";
+        }
+    </script>
+
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 35px;">
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slider-image">
+                    <div>
+                        <button onclick="deskripsi()" class="active">Deskripsi</button>
+                        <button onclick="diskusi()">Diskusi</button>
+                        <button onclick="ulasan()">Ulasan</button>
+                    </div>
+                    <div class="slider-text">
+                        Earphone TWS JBL TUNE 225TWS adalah produk terbaru dari JBL yang dilengkapi dengan teknologi nirkabel Bluetooth 5.0. Earphone ini memiliki desain in-ear yang ergonomis dan ringan, sehingga sangat nyaman digunakan dalam jangka waktu yang lama. Anda dapat memilih warna putih atau hitam glossy yang elegan yang sesuai dengan gaya Anda.<br>
+                        <br>Earphone TWS JBL TUNE 225TWS menghasilkan suara yang jernih dan bass yang kuat berkat driver 12mm yang terdapat pada setiap earphone. Earphone ini juga dilengkapi dengan fitur JBL Pure Bass yang ikonik, yang menambah kekuatan bass pada setiap lagu yang Anda dengarkan. Anda dapat mengontrol pemutaran musik dan menerima panggilan hanya dengan satu sentuhan tombol di earphone, sehingga Anda dapat menjawab panggilan dan mengontrol musik tanpa harus mengeluarkan ponsel dari saku Anda.<br>
+                        <br>Earphone TWS JBL TUNE 225TWS dilengkapi dengan charging case yang mampu mengisi baterai earphone hingga 25 jam pemakaian. Earphone ini juga memiliki fitur fast charging yang memungkinkan Anda mengisi daya earphone selama beberapa menit saja dan dapat digunakan selama beberapa jam. Anda dapat menghubungkan earphone ini dengan smartphone, tablet, atau perangkat lain yang memiliki Bluetooth, sehingga Anda dapat menikmati musik dan menerima panggilan tanpa harus menggunakan kabel yang merepotkan.<br>
+                        <br>Kemasan: Earphone ini dijual dalam kemasan berisi earphone, charging case, kabel USB-C, dan panduan pengguna.
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <div>
+                        <button onclick="deskripsi()">Deskripsi</button>
+                        <button onclick="diskusi()" class="active">Diskusi</button>
+                        <button onclick="ulasan()">Ulasan</button>
+                    </div>
+                    <div class="slider-text">
+                        <img src="gambar/diskusielektronik.png" alt="diskusi">
+                        <input type="text" id="comment" placeholder="Add to comment..." required>
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <div>
+                        <button onclick="deskripsi()">Deskripsi</button>
+                        <button onclick="diskusi()">Diskusi</button>
+                        <button onclick="ulasan()" class="active">Ulasan</button>
+                    </div>
+                    <div class="slider-text">
+                        <img src="gambar/ulasanelektronik.png" alt="ulasan">
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>  
+
+    <script>
+        var slideIndex = 0;
+        var images = document.getElementsByClassName("slider-image");
+
+        function showImages() {
+            for (var i = 0; i < images.length; i++) {
+                if (i >= slideIndex && i < slideIndex + 1) {
+                    images[i].style.display = "flex";
+                } else {
+                    images[i].style.display = "none";
+                }
+            }
+        }
+
+        function deskripsi() {
+            slideIndex = 0;
+            showImages();
+        }
+
+        function diskusi() {
+            slideIndex = 1;
+            showImages();
+        }
+
+        function ulasan() {
+            slideIndex = 2;
+            showImages();
+        }
+
+        showImages();
+    </script>
+
+    <div class="teksaktivitas">
+        <span class="aktivitas">Produk Serupa</span>
+    </div>
+
+    <div class="kotak" style="display: flex; justify-content: center; align-items: center; background-color: transparent;">
+        <img src="gambar/serupaelektronik.png" alt="produkserupa" style="width: 60%;">
+    </div>
+
+    <div class="kotak2">
+        <div class="kotakdalam">
+            <a href="#"><img src="gambar/kategoripilihan1.png" alt="pilihan1"></a>
+        </div>
+        <div class="kotakdalam">
+            <a href="#"><img src="gambar/kategoripilihan2.png" alt="pilihan2"></a>
+        </div>
+        <div class="kotakdalam">
+            <a href="#"><img src="gambar/kategoripilihan3.png" alt="pilihan3"></a>
+        </div>
+        <div class="kotakdalam">
+            <a href="#"><img src="gambar/kategoripilihan4.png" alt="pilihan4"></a>
+        </div>
+    </div>
+
+    <footer style="margin-top: 30px; min-height: 16vh;">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <a class="navbar-brand" href="index.html"><img src="gambar/logo.png"></a>
+                    <div class="social-links mt-3">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT US</h4>
+                    <span class="question">Jika Anda mempunyai pertanyaan, bisa hubungi<br><a href="mailto:tokollege@gmail.com" style="color:orange;"> tokollege@gmail.com</a></span>
+                    <img src="gambar/lokasihp.png" class="lokasihp">
+                </div>
+                <div class="footer-col">
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li><a href="#">Tentang</a></li>
+                        <li><a href="#">Informasi Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>STORE</h4>
+                    <ul>
+                        <li><a href="#">Afiliasi</a></li>
+                        <li><a href="#">Diskon</a></li>
+                        <li><a href="#">Penjualan</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Semua Koleksi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr size="1" color="gray" width="100%" text-align="left">
+
+            <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                <span>
+                    <img src="gambar/card.png"><br>
+                    <img src="gambar/copyright.png">
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var jumlah = 1;
+        var harga = 1100000;
+
+        function ubahKuantitas(tambah) {
+            if (tambah) {
+                jumlah++;
+            } else {
+                if (jumlah > 1) {
+                    jumlah--;
+                }
+            }
+            document.getElementById("jumlah").innerText = jumlah;
+            document.getElementById("harga").innerText = harga * jumlah;
+        }
+    </script>
+</body>
+</html>
